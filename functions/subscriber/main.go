@@ -30,9 +30,8 @@ func main() {
 }
 
 type Config struct {
-	Log          *slog.Logger
-	NATSURL      string
-	ConsumerName string
+	Log     *slog.Logger
+	NATSURL string
 }
 
 func run(ctx context.Context, cfg Config) (err error) {
